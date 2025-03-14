@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            background-color: rgb(130, 182, 228);
+        }
+        h1{
+            color: #fff;
+            background-color: rgb(76, 114, 114);
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados</h1>
+    
+    <button onclick="inicio()">Clique aqui </button>
+
+    <h3 id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </h3>
+    <script>
+        function inicio(){
+            var nome = window.prompt('Qual é o seu nome?')
+            var res = window.document.getElementById('resultado')
+            res.innerHTML = `Olá, ${nome}`
+        }
+
+    </script>
+</body>
+</html>

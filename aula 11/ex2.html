@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+            background-color: antiquewhite;
+            padding: 50px;
+            margin: 50px;
+        }
+        body{
+            background-color: lightblue;
+        }
+        .button button{
+            color: red;
+            background-color: rgb(188, 188, 201);
+            margin: auto;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados</h1>
+
+    <div class="button"><button onclick="inicio()">Clique para começar</button></div>
+
+    <script>
+        function inicio(){
+            var nome = window.prompt('Qual é o seu nome?')
+
+            window.alert(`Olá, ${nome}! É um desprazer te conhecer!`)
+        }
+    </script>
+</body>
+</html>
