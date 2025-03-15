@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <h1>Condicional em js</h1>
+    <button onclick="cond()">Verificar</button>
+    <h2 id="situacao">Verificar</h2>
+
+    <script>
+        function cond(){
+            var n1 = Number(window.prompt(`Informe um valor: `))
+            var n2 = Number(window.prompt(`Informe outro valor: `))
+
+            var msg 
+            if(n1 > n2){
+                msg = 'O número 1 é maior!'
+            }else{
+                msg = 'O número 2 é maior!'
+            }
+
+            var res = document.getElementById('situacao')
+            res.innerHTML += `<p>${msg}</p>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Condicional</h1>
+    <button onclick="choose()">Verificar</button>
+    <h2 id="situacao">Verificar</h2>
+
+
+    <script>
+        function choose(){
+            var opt1 = Number(window.prompt('Digite um valor: '))
+            var opt2 = Number(window.prompt('Digite outro valor: '))
+            var esc =  Number(window.prompt('Informe a opc: 1-Soma, 2-Mult, 3-Div, 4-Sub'))
+
+            var msg 
+            if(){
+                msg = `Soma: ${opt1+opt2}`
+            }if(){
+                msg = 'O número 2 é maior!'
+            }
+
+            var res = document.getElementById('situacao')
+            res.innerHTML += `<p>${msg}</p>`
+
+        }
+    </script>
+</body>
+</html>

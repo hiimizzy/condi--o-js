@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="media()">Ver resultado</button>
+    <h2 id="res">
+        <p>Resultado</p>
+    </h2>
+
+
+    <script>
+        function media(){
+        var num1 = Number(window.prompt('Digite primeira nota: '))
+        var num2 = Number(window.prompt('Digite segunda nota: '))
+        var num3 = Number(window.prompt('Digite terceira nota: '))
+        var res = document.querySelector('h2#res')
+
+        res.innerHTML = `<p>Média: ${(num1 + num2 + num3)/3}</p>`
+        }
+    </script>
+</body>
+</html>

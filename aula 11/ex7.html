@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangulodasbermuda</title>
+</head>
+<body>
+    <h1>Calculando a áre do triângulo das bermudas</h1>
+    
+    <button onclick="inicio()">Calcular área</button>
+
+    <h3 id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </h3>
+    <script>
+        function inicio(){
+            var base = window.prompt('Base')
+            var altura = window.prompt('Altura')
+            var res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>Resultado: ${(base*altura)/2}</p>`
+        }
+
+    </script>
+</body>
+</html>
